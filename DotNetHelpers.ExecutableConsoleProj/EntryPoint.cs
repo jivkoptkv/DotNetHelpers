@@ -3,13 +3,14 @@ using System;
 
 namespace DotNetHelpers.ExecutableConsoleProj
 {
-    internal class EntryPoint
+    internal static class EntryPoint
     {
         private static readonly ILogOutput log;
 
         static EntryPoint()
         {
             log = Log.GetPrefixed("EntryPoint");
+            log.IsActive = true;
         }
 
         private static void Main(string[] args)

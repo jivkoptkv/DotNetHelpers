@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractLogOutput.cs" />
     <Compile Include="ILogOutput.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="LogConsoleOutput.cs" />

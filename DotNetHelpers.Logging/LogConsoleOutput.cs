@@ -2,11 +2,18 @@
 
 namespace DotNetHelpers.Logging
 {
-    public class LogConsoleOutput : ILogOutput
+    public class LogConsoleOutput : AbstractLogOutput
     {
-        void ILogOutput.WriteLine(string message, params object[] args)
+        public LogConsoleOutput() : base(true)
         {
-            Console.WriteLine(message, args);
+        }
+
+        public override void WriteLine(string message, params object[] args)
+        {
+            if (IsActive)
+            {
+                Console.WriteLine(message, args);
+            }
         }
     }
 }
