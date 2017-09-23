@@ -4,10 +4,21 @@ namespace DotNetHelpers.Logging
 {
     public static class Log
     {
-        private static readonly IDictionary<string, ILogOutput> prefixedLogs = new Dictionary<string, ILogOutput>();
-        private static readonly object prefixedLogsLock = new object();
-        private static readonly object outLock = new object();
-        private static ILogOutput output = new LogConsoleOutput();
+        private static readonly IDictionary<string, ILogOutput> prefixedLogs;
+
+        private static readonly object prefixedLogsLock;
+
+        private static readonly object outLock;
+
+        private static ILogOutput output;
+
+        static Log()
+        {
+            prefixedLogs = new Dictionary<string, ILogOutput>();
+            prefixedLogsLock = new object();
+            outLock = new object();
+            output = new LogConsoleOutput();
+        }
 
         public static void WriteLine(string message, params object[] args)
         {

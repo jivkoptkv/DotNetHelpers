@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetHelpers.Logging", "DotNetHelpers.Logging\DotNetHelpers.Logging.csproj", "{5A4B88A6-3C54-485B-ADD5-409996B5C6B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetHelpers.ExecutableConsoleProj", "DotNetHelpers.ExecutableConsoleProj\DotNetHelpers.ExecutableConsoleProj.csproj", "{F68D5C09-7CB2-40CC-B582-D19D65769699}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5A4B88A6-3C54-485B-ADD5-409996B5C6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A4B88A6-3C54-485B-ADD5-409996B5C6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A4B88A6-3C54-485B-ADD5-409996B5C6B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68D5C09-7CB2-40CC-B582-D19D65769699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68D5C09-7CB2-40CC-B582-D19D65769699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68D5C09-7CB2-40CC-B582-D19D65769699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68D5C09-7CB2-40CC-B582-D19D65769699}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
